@@ -22,11 +22,9 @@ void detectarMina(char ** tableroJugador, char ** tablero, int * NumMinas, int *
 		printf("Elige la fila de la casilla que quieras marcar como mina: ");
 		fflush(0);
 		scanf("%d", &Fila);
-		fflush(stdin);
 		printf("Elige la columna de la casilla que quieras marcar como mina: ");
 		fflush(0);
 		scanf("%d", &Columna);
-		fflush(stdin);
 		Fila--;
 		Columna--;
 
@@ -60,11 +58,9 @@ void probarCasilla(char ** tableroJugador, char ** tablero, int * dificultad, in
 		printf("Elige la fila de la casilla que quieras descubrir: ");
 		fflush(0);
 		scanf("%d", &Fila);
-		fflush(stdin);
 		printf("Elige la columna de la casilla que quieras descubrir: ");
 		fflush(0);
 		scanf("%d", &Columna);
-		fflush(stdin);
 		Fila--;
 		Columna--;
 		if(tableroJugador[Fila][Columna] == 'P'){

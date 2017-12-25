@@ -9,6 +9,6 @@ Description :
 #ifndef AJUSTES_H_
 #define AJUSTES_H_
 
-int * Dificultad(char ** argv);
+int * Dificultad(int argc, char ** argv);
 
 #endif /* AJUSTES_H_ */

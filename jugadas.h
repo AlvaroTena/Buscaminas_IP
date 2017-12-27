@@ -1,9 +1,9 @@
 /*
 =======================================================
 Name : Buscaminas_IP
-Author : Tena
+Author : Alvaro Tena
 Created on: 14 dic. 2017
-Description :
+Description : 
 =======================================================
 */
 #ifndef JUGADAS_H_

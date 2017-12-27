@@ -1,9 +1,9 @@
 /*
 =======================================================
-Name : Buscaminas_Practica_IP
+Name : Buscaminas_IP
 Author : Tena
 Created on: 12 dic. 2017
-Description : 
+Description :
 =======================================================
 */
 #ifndef AJUSTES_H_

@@ -60,7 +60,7 @@ int * Dificultad(int argc, char ** argv) {
 			difficult = '0';
 		}
 		else {
-			fprintf(stderr, "Selecciona una de las opciones, por favor.\n");
+			fprintf(stderr, "Seleccione una de las opciones, por favor.\n");
 			fflush(0);
 		}
 	}

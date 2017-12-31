@@ -47,7 +47,7 @@ int main(int argc, char ** argv) {
 				if (jugada == 2) {
 					detectarMina(tableroJugador, tablero, &NumMinas, &NumMinasDetectadas, dificultad);
 					if (NumMinas == 0 && NumMinasDetectadas == dificultad[2]) {
-						printf("\n\nEnhorabuena!! Has ganado!");
+						printf("\n\nEnhorabuena!! Ha ganado!");
 						mostrarTablero(tablero, dificultad, dificultad[2]);
 						printf("\n\n\n");
 						juego = 0;
@@ -66,7 +66,7 @@ int main(int argc, char ** argv) {
 					exit(0);
 				}
 				else if (jugada != 1 && jugada != 2 && jugada != 3) {
-					fprintf(stderr, "Selecciona una de las opciones, por favor.\n");
+					fprintf(stderr, "Seleccione una de las opciones, por favor.\n");
 					fflush(0);
 				}
 
@@ -106,7 +106,7 @@ int main(int argc, char ** argv) {
 				if (jugada == 2) {
 					detectarMina(tableroJugador, tablero, &NumMinas, &NumMinasDetectadas, dificultad);
 					if (NumMinas == 0 && NumMinasDetectadas == dificultad[2]) {
-						printf("Enhorabuena!! Has ganado!");
+						printf("Enhorabuena!! Ha ganado!");
 						mostrarTablero(tablero, dificultad, dificultad[2]);
 						printf("\n\n\n");
 						juego = 0;
@@ -125,7 +125,7 @@ int main(int argc, char ** argv) {
 					exit(0);
 				}
 				else if (jugada != 1 && jugada != 2 && jugada != 3 && jugada != 4) {
-					fprintf(stderr, "Selecciona una de las opciones, por favor.\n");
+					fprintf(stderr, "Seleccione una de las opciones, por favor.\n");
 					fflush(0);
 				}
 
@@ -137,7 +137,7 @@ int main(int argc, char ** argv) {
 
 		}
 		else if (init != 1 && init != 2 && init != 3) {
-			fprintf(stderr, "Selecciona una de las opciones, por favor.\n");
+			fprintf(stderr, "Seleccione una de las opciones, por favor.\n");
 			fflush(0);
 		}
 	}

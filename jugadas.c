@@ -24,25 +24,25 @@ void detectarMina(char ** tableroJugador, char ** tablero, int * NumMinas, int *
 	int elegir = 1;
 	while (elegir == 1) {
 		while (seguir == 0) {
-			printf("Elige la fila de la casilla que quieras marcar como mina: ");
+			printf("Elija la fila de la casilla que quieras marcar como mina: ");
 			fflush(0);
 			scanf("%d", &Fila);
 			if (Fila > 0 && Fila <= NumFilas) {
 				seguir = 1;
 			}
 			else {
-				printf("Introduce una FILA valida!\n");
+				printf("Introduzca una FILA valida!\n");
 			}
 		}
 		while (seguir1 == 0) {
-			printf("Elige la columna de la casilla que quieras marcar como mina: ");
+			printf("Elija la columna de la casilla que quieras marcar como mina: ");
 			fflush(0);
 			scanf("%d", &Columna);
 			if (Columna > 0 && Columna <= NumColumnas) {
 				seguir1 = 1;
 			}
 			else {
-				printf("Introduce una COLUMNA valida!\n");
+				printf("Introzca una COLUMNA valida!\n");
 			}
 		}
 		Fila--;
@@ -65,7 +65,7 @@ void detectarMina(char ** tableroJugador, char ** tablero, int * NumMinas, int *
 			elegir = 0;
 		}
 		else {
-			fprintf(stderr, "Selecciona una casilla valida, por favor.\n");
+			fprintf(stderr, "Seleccione una casilla valida, por favor.\n");
 			fflush(0);
 		}
 	}
@@ -82,35 +82,35 @@ void probarCasilla(char ** tableroJugador, char ** tablero, int * dificultad, in
 
 	while (elegir == 1) {
 		while (seguir == 0) {
-			printf("Elige la fila de la casilla que quieras descubrir: ");
+			printf("Elija la fila de la casilla que quieras descubrir: ");
 			fflush(0);
 			scanf("%d", &Fila);
 			if (Fila > 0 && Fila <= NumFilas) {
 				seguir = 1;
 			}
 			else {
-				printf("Introduce una FILA valida!\n");
+				printf("Introduzca una FILA valida!\n");
 			}
 		}
 		while (seguir1 == 0) {
-			printf("Elige la columna de la casilla que quieras descubrir: ");
+			printf("Elija la columna de la casilla que quieras descubrir: ");
 			fflush(0);
 			scanf("%d", &Columna);
 			if (Columna > 0 && Columna <= NumColumnas) {
 				seguir1 = 1;
 			}
 			else {
-				printf("Introduce una COLUMNA valida!\n");
+				printf("Introduzca una COLUMNA valida!\n");
 			}
 		}
 		Fila--;
 		Columna--;
 		if (tableroJugador[Fila][Columna] == 'P') {
-			printf("No puedes descubrir una casilla que previamente has marcado como mina.\n");
+			printf("No puede descubrir una casilla que previamente ha marcado como mina.\n");
 			fflush(0);
 		}
 		else if (tablero[Fila][Columna] == 'X') {
-			printf("\n\nVaya! Una mina exploto...\nHas perdido!!");
+			printf("\n\nVaya! Una mina exploto...\nHa perdido!!");
 			fflush(0);
 			mostrarTablero(tablero, dificultad, dificultad[2]);
 			printf("\n\n");

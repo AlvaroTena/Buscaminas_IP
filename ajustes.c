@@ -51,6 +51,7 @@ int * Dificultad(int argc, char ** argv) {
 			if (argc != 4) {
 				printf("USO: %s Numero_Filas Numero_Columnas Numero_Minas\n", argv[0]);
 				fflush(0);
+				system("PAUSE");
 				exit(-1);
 			}
 			int i;

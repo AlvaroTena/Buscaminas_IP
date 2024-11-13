@@ -108,6 +108,8 @@ void probarCasilla(char ** tableroJugador, char ** tablero, int * dificultad, in
 		if (tableroJugador[Fila][Columna] == 'P') {
 			printf("No puede descubrir una casilla que previamente ha marcado como mina.\n");
 			fflush(0);
+			seguir = 0;
+			seguir1 = 0;
 		}
 		else if (tablero[Fila][Columna] == 'X') {
 			printf("\n\nVaya! Una mina exploto...\nHa perdido!!");
